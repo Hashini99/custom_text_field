@@ -2,6 +2,7 @@ name: custom_text_field_plugin
 description: A customizable text field widget for Flutter.
 version: 1.0.0
 homepage:
+repository: https://github.com/Hashini99/custom_text_field
 
 environment:
   sdk: ^3.7.2
