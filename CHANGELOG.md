@@ -1,3 +1,8 @@
-## 2025.04.03
+# Changelog for Custom TextField Plugin
 
-* TODO: Describe initial release.
+## [1.0.0] - 2025-04-03
+### Initial Release
+- Created a highly customizable text field for Flutter with the following features:
+  - Customizable border color, width, and radius
+  - Support for icons, hint text, and labels
+  - Obscure text option for password fields
