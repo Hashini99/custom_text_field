@@ -1,14 +1,11 @@
-# My Custom TextField
-A Flutter package that provides a highly customizable text field.
+# Changelog for Custom TextField Plugin
 
-## Features
-✅ Custom border color, width, and radius  
-✅ Support for icons, hint text, and labels  
-✅ Obscure text for password fields  
+## [1.0.0] - 2025-04-03
+### Initial Release
+- Created a highly customizable text field for Flutter with the following features:
+  - Customizable border color, width, and radius
+  - Support for icons, hint text, and labels
+  - Obscure text option for password fields
 
-## Installation
-Add the package to your `pubspec.yaml`:
-```yaml
-dependencies:
-  my_custom_textfield: ^1.0.0
-
+## [Unreleased]
+- Initial development.
