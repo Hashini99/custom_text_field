@@ -6,6 +6,3 @@
   - Customizable border color, width, and radius
   - Support for icons, hint text, and labels
   - Obscure text option for password fields
-
-## [Unreleased]
-- Initial development.
