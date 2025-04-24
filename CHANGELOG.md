@@ -11,3 +11,6 @@
 ### Changed
 - Refactored the main Dart file to improve performance 
 
+## [1.0.2] - 2025-04-24
+### Changed
+- Refactored code and point fixes
