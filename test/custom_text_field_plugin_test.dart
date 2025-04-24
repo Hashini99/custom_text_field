@@ -7,13 +7,13 @@ import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 class MockCustomTextFieldPluginPlatform
     with MockPlatformInterfaceMixin
     implements CustomTextFieldPluginPlatform {
-
   @override
   Future<String?> getPlatformVersion() => Future.value('42');
 }
 
 void main() {
-  final CustomTextFieldPluginPlatform initialPlatform = CustomTextFieldPluginPlatform.instance;
+  final CustomTextFieldPluginPlatform initialPlatform =
+      CustomTextFieldPluginPlatform.instance;
 
   test('$MethodChannelCustomTextFieldPlugin is the default instance', () {
     expect(initialPlatform, isInstanceOf<MethodChannelCustomTextFieldPlugin>());
@@ -21,7 +21,8 @@ void main() {
 
   test('getPlatformVersion', () async {
     CustomTextFieldPlugin customTextFieldPlugin = CustomTextFieldPlugin();
-    MockCustomTextFieldPluginPlatform fakePlatform = MockCustomTextFieldPluginPlatform();
+    MockCustomTextFieldPluginPlatform fakePlatform =
+        MockCustomTextFieldPluginPlatform();
     CustomTextFieldPluginPlatform.instance = fakePlatform;
 
     expect(await customTextFieldPlugin.getPlatformVersion(), '42');

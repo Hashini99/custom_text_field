@@ -72,47 +72,63 @@ class _CustomTextFieldState extends State<CustomTextField> {
             padding: const EdgeInsets.only(bottom: 6),
             child: Text(
               widget.labelText!,
-              style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: widget.borderColor),
+              style: TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.w500,
+                color: widget.borderColor,
+              ),
             ),
           ),
         ClipRRect(
           borderRadius: BorderRadius.circular(widget.radius!),
           child: TextField(
             controller: widget.controller,
-            obscureText: widget.isPassword! ? !_isPasswordVisible : widget.obscureText,
+            obscureText:
+                widget.isPassword! ? !_isPasswordVisible : widget.obscureText,
             keyboardType: widget.textInputType,
             inputFormatters: widget.inputFormatters,
-            textCapitalization: widget.textCapitalization ?? TextCapitalization.none,
-            style: widget.textStyle ?? TextStyle(color: widget.textColor, fontSize: 16),
+            textCapitalization:
+                widget.textCapitalization ?? TextCapitalization.none,
+            style:
+                widget.textStyle ??
+                TextStyle(color: widget.textColor, fontSize: 16),
             textAlign: widget.textAlign,
             maxLines: widget.maxLines,
             readOnly: widget.readOnly!,
             focusNode: widget.focusNode,
             onChanged: widget.onChanged,
             decoration: InputDecoration(
-              contentPadding: const EdgeInsets.symmetric(vertical: 14, horizontal: 12),
+              contentPadding: const EdgeInsets.symmetric(
+                vertical: 14,
+                horizontal: 12,
+              ),
               filled: true,
               fillColor: widget.fillColor,
               hintText: widget.hint,
-              hintStyle: widget.hintStyle ?? TextStyle(color: widget.hintColor, fontSize: 14),
+              hintStyle:
+                  widget.hintStyle ??
+                  TextStyle(color: widget.hintColor, fontSize: 14),
               border: _getBorder(),
               focusedBorder: _getBorder(),
               enabledBorder: _getBorder(),
               errorText: widget.errorMessage,
               prefixIcon: widget.prefixIcon,
-              suffixIcon: widget.isPassword!
-                  ? IconButton(
-                      icon: Icon(
-                        _isPasswordVisible ? Icons.visibility : Icons.visibility_off,
-                        color: widget.hintColor,
-                      ),
-                      onPressed: () {
-                        setState(() {
-                          _isPasswordVisible = !_isPasswordVisible;
-                        });
-                      },
-                    )
-                  : widget.suffixIcon,
+              suffixIcon:
+                  widget.isPassword!
+                      ? IconButton(
+                        icon: Icon(
+                          _isPasswordVisible
+                              ? Icons.visibility
+                              : Icons.visibility_off,
+                          color: widget.hintColor,
+                        ),
+                        onPressed: () {
+                          setState(() {
+                            _isPasswordVisible = !_isPasswordVisible;
+                          });
+                        },
+                      )
+                      : widget.suffixIcon,
             ),
           ),
         ),
@@ -122,7 +138,10 @@ class _CustomTextFieldState extends State<CustomTextField> {
 
   OutlineInputBorder _getBorder() {
     return OutlineInputBorder(
-      borderSide: BorderSide(width: widget.borderWidth!, color: widget.borderColor!),
+      borderSide: BorderSide(
+        width: widget.borderWidth!,
+        color: widget.borderColor!,
+      ),
       borderRadius: BorderRadius.circular(widget.radius!),
     );
   }
