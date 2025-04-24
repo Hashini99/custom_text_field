@@ -8,7 +8,8 @@ abstract class CustomTextFieldPluginPlatform extends PlatformInterface {
 
   static final Object _token = Object();
 
-  static CustomTextFieldPluginPlatform _instance = MethodChannelCustomTextFieldPlugin();
+  static CustomTextFieldPluginPlatform _instance =
+      MethodChannelCustomTextFieldPlugin();
 
   /// The default instance of [CustomTextFieldPluginPlatform] to use.
   ///
