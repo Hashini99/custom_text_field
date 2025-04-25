@@ -1,12 +1,16 @@
 name: custom_text_field_plugin
-description: A customizable text field widget for Flutter.
+description: >
+  A customizable text field widget for Flutter that supports various features 
+  such as password visibility toggle, custom styling, input formatting, 
+  and error message display. Ideal for creating user-friendly and visually 
+  appealing input fields in your Flutter applications.
 version: 1.0.2
 homepage:
 repository: https://github.com/Hashini99/custom_text_field
 
 environment:
   sdk: ^3.7.2
-  flutter: '>=3.3.0'
+  flutter: ">=3.3.0"
 
 dependencies:
   flutter:
@@ -22,7 +26,6 @@ dev_dependencies:
   flutter_lints: ^5.0.0
 
 flutter:
-
   plugin:
     platforms:
       android:
@@ -33,5 +36,3 @@ flutter:
       web:
         pluginClass: CustomTextFieldPluginWeb
         fileName: custom_text_field_plugin_web.dart
-
- 
