@@ -4,7 +4,7 @@ description: >
   such as password visibility toggle, custom styling, input formatting, 
   and error message display. Ideal for creating user-friendly and visually 
   appealing input fields in your Flutter applications.
-version: 1.0.2
+version: 1.0.3
 homepage:
 repository: https://github.com/Hashini99/custom_text_field
 
