@@ -13,7 +13,8 @@ A new Flutter plugin project.
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Your Company' => 'email@example.com' }
   s.source           = { :path => '.' }
-  s.source_files = 'Classes/**/*'
+  s.source_files = 'custom_text_field_plugin/Sources/custom_text_field_plugin/**/*.swift'
+  s.resource_bundles = {'custom_text_field_plugin_privacy' => ['custom_text_field_plugin/Sources/custom_text_field_plugin/PrivacyInfo.xcprivacy']}
   s.dependency 'Flutter'
   s.platform = :ios, '12.0'
 
