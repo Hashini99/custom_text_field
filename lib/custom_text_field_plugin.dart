@@ -2,31 +2,79 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class CustomTextField extends StatefulWidget {
+  // Controller for managing the text input.
   final TextEditingController? controller;
+
+  // Placeholder text displayed inside the text field.
   final String? hint;
+
+  // Label text displayed above the text field.
   final String? labelText;
+
+  // Type of keyboard to use for text input.
   final TextInputType? textInputType;
+
+  // Border radius for the text field.
   final double? radius;
+
+  // Whether to obscure the text (e.g., for passwords).
   final bool obscureText;
+
+  // Indicates if the text field is a password field.
   final bool? isPassword;
+
+  // Background color of the text field.
   final Color? fillColor;
+
+  // Border color of the text field.
   final Color? borderColor;
+
+  // Color of the hint text.
   final Color? hintColor;
+
+  // Color of the input text.
   final Color? textColor;
+
+  // Width of the border.
   final double? borderWidth;
+
+  // Style for the hint text.
   final TextStyle? hintStyle;
+
+  // Style for the input text.
   final TextStyle? textStyle;
+
+  // Alignment of the text inside the text field.
   final TextAlign textAlign;
+
+  // Maximum number of lines for the text field.
   final int? maxLines;
+
+  // Whether the text field is read-only.
   final bool? readOnly;
+
+  // Input formatters for controlling the input.
   final List<TextInputFormatter>? inputFormatters;
+
+  // Widget displayed at the start of the text field.
   final Widget? prefixIcon;
+
+  // Widget displayed at the end of the text field.
   final Widget? suffixIcon;
+
+  // Capitalization behavior for the text input.
   final TextCapitalization? textCapitalization;
+
+  // Error message to display below the text field.
   final String? errorMessage;
+
+  // Focus node for managing focus state.
   final FocusNode? focusNode;
+
+  // Callback for when the text changes.
   final ValueChanged<String>? onChanged;
 
+  // Constructor to initialize the properties of the text field.
   const CustomTextField({
     Key? key,
     this.controller,
